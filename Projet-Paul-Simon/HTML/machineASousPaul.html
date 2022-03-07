@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/StyleMachineASousPaul.css">
+    <script src="../JS/JQuery 3.5.1.js"></script>
+    <script src="../JS/MachineASousPaul.js"></script>
+    <script src="../JS/libraryRoulette.js"></script>  
+    <title>Machine à sous</title>
+</head>
+<body> 
+    <h1 id="titre">Machine à sous</h1>
+<div id="regle">
+    <h2 class="sousTitre">Règles</h2>
+    <p class="text">Le principe est simple vous devez miser une somme d'argent que vous possédez et lancer la roue, si vous obtenez 2 cartes identiques vous doublez votre mise, si vous en obtenez 3 vous triplez votre mise mais attention si vous en obtenez aucune d'identique vous perdez.</p>
+    <h2 class="sousTitre">Mise/Cagnotte</h2>
+    <label>Votre mise : </label>
+    <input id="mise" type="number" min="0.1" max="10000" step="0.1">
+    <label>Votre cagnotte : </label>
+    <input id="cagnotte" type="text" disabled><br>
+    <label id="resultat"></label>
+    <input type="button" value="Lancer" id="btnLancer">
+    <input type="button" value="Recommencer" id="btnRecommencer">
+</div>
+    <div class="boxJeu">          
+        <ul class="position" id="G">
+            <li><img src="../IMAGES/MachineSousPaul/t1.png"></li>
+            <li><img src="../IMAGES/MachineSousPaul/t2.png"></li>
+            <li><img src="../IMAGES/MachineSousPaul/t3.png"></li>
+            <li><img src="../IMAGES/MachineSousPaul/t4.png"></li>
+            <li><img src="../IMAGES/MachineSousPaul/t14.png"></li>
+        </ul> 
+        <ul class="position" id="M">
+            <li><img src="../IMAGES/MachineSousPaul/t1.png"></li>
+            <li><img src="../IMAGES/MachineSousPaul/t2.png"></li>
+            <li><img src="../IMAGES/MachineSousPaul/t3.png"></li>
+            <li><img src="../IMAGES/MachineSousPaul/t4.png"></li>
+            <li><img src="../IMAGES/MachineSousPaul/t14.png"></li>
+        </ul> 
+        <ul class="position" id="D">
+            <li><img src="../IMAGES/MachineSousPaul/t1.png"></li>
+            <li><img src="../IMAGES/MachineSousPaul/t2.png"></li>
+            <li><img src="../IMAGES/MachineSousPaul/t3.png"></li>
+            <li><img src="../IMAGES/MachineSousPaul/t4.png"></li>
+            <li><img src="../IMAGES/MachineSousPaul/t14.png"></li>
+        </ul> 
+    </div>
+</body>
+</html>
